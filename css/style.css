@@ -1,0 +1,122 @@
+:root{
+    /*colors*/
+    --black: #1E1E1E;
+    --white: #FFFFFF;
+    /*fonts*/
+    --body: 'Quicksand', sans-serif;
+    /*weights*/
+    --light: 400;
+    --regular: 500;
+}
+
+body{
+    background-color: var(--white);
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.logo img{
+    width: 160px;
+}
+
+.hamburger-menu {
+    background: none;
+    border: none;
+    color:var(--black);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu .bar {
+    width: 24px;
+    height: 2px;
+    background-color: var(--black);
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.hamburger-menu span {
+    padding-top: 4px;
+    font-size: 10px;
+    color:var(--black);
+    font-family: var(--body);
+    font-weight: var(--regular);
+}
+
+.menu-open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}  
+
+.menu-open ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    padding-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.menu-open li {
+    margin: 16px 0;
+}
+
+.menu-open a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--body);
+    font-size: 0.8em;
+}
+
+.close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.close p{
+    margin-block-start: -0.8em;
+    margin-block-end: 0em;
+    font-family: var(--body);
+    font-size: 0.6em;
+}
+.close-menu {
+    color: var(--white);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-row {
+        padding: 36px 80px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .nav-row {
+        padding: 36px 128px;
+    }
+}
