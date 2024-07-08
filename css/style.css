@@ -4,13 +4,22 @@
     --white: #FFFFFF;
     /*fonts*/
     --body: 'Quicksand', sans-serif;
+    --h2: 'Quicksand', sans-serif;
     /*weights*/
     --light: 400;
     --regular: 500;
+    --bold: 700;
 }
 
 body{
     background-color: var(--white);
+}
+
+h2{
+    font-family: var(--h2);
+    font-weight: var(--bold);
+    font-size: 0.8em;
+    color: var(--black);
 }
 
 .nav-row {
@@ -68,7 +77,7 @@ body{
     z-index: 2;
 }  
 
-.menu-open ul {
+.menu-open ul, .summary ul{
     list-style: none;
     padding-inline-start: 0px;
     padding-inline-end: 0px;
@@ -109,14 +118,44 @@ body{
     font-size: 2em;
 }
 
+main {
+    padding: 0px 24px;
+}
+
+.summary li{
+    font-family: var(--body);
+    font-size: 0.8em;
+    color: var(--black);
+}
+
+.summary {
+    margin-bottom: 24px;
+}
+
+.summary-container{
+    display: flex;
+    flex-direction: column;
+}
+
 @media screen and (min-width: 768px) {
     .nav-row {
         padding: 36px 80px;
+    }
+    main {
+        padding: 0px 80px;
+    }
+    .summary-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .nav-row {
         padding: 36px 128px;
+    }
+    main {
+        padding: 0px 128px;
     }
 }
