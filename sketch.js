@@ -18,17 +18,5 @@ function draw() {
 
 document.getElementById('saveButton').addEventListener('click', function() {
   // Save the canvas as an image
-  saveCanvas(canvas, 'doodle', 'png');
-
-  // Convert the canvas to an image data URL
-  let dataURL = canvas.elt.toDataURL('image/png');
-
-  // Create a mailto link with the image data URL
-  let email = 'sarahlisamero@gmail.com';
-  let subject = 'Doodle from Portfolio';
-  let body = encodeURIComponent('Here is a doodle I made on your portfolio:\n\n' + dataURL);
-  let mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
-
-  // Open the mailto link to open the default email client
-  window.location.href = mailtoLink;
+  saveCanvas(canvas, 'my_best_doodle_ever', 'png');
 });
