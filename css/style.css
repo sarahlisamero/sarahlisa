@@ -15,8 +15,16 @@
     --bold: 700;
 }
 
+html{
+    height: 100%;
+}
 body{
     background-color: var(--black);
+    /*min-height: 100vh;*/
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 4em;
 }
 
 p{
@@ -50,12 +58,7 @@ h2{
 .colors{
     color: var(--white);
 }
-/*h3{
-    font-family: var(--h3);
-    font-weight: var(--bold);
-    font-size: 0.8em;
-    color: var(--black);
-}*/
+
 .nav-row {
     display: flex;
     justify-content: space-between;
@@ -175,38 +178,6 @@ main {
     flex-direction: column;
 }
 
-/*.line{
-    background-color: var(--black);
-    height: 0.5px;
-    width: 100%;
-    margin: 24px 0;
-}
-
-.project-filter{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-}
-
-.project-type{
-    font-family: var(--body);
-    font-size: 0.8em;
-    color: var(--black);
-    text-decoration: none;
-    background-color: var(--grey);
-    padding: 10px 16px;
-}
-
-.project-type:hover{
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.project-img{
-    width: 100%;
-}*/
-
 /*trick*/
 body {
     position: relative;
@@ -217,15 +188,22 @@ body::after {
     display: block;
     height: 50px;
 }
+
 footer{
     margin-left: 24px;
     margin-right: 24px;
-    display: flex;
+    padding-bottom: 24px;
+    /*display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: space-between;
+    align-items: space-between;*/
     border-top: 0.5px solid var(--white);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 footer a{
     font-family: var(--body);
     font-size: 0.8em;
@@ -235,43 +213,52 @@ footer a{
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
+
 footer div{
     display: flex;
     flex-direction: row;
     gap: 16px;
 }
+
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .doodle{
-    align-self: flex-end;
+    text-align: right;
     margin-top: -10px;
     font-size: 0.8em;
     font-family: var(--body);
 }
+
 @media screen and (min-width: 768px) {
     .nav-row {
         padding: 36px 80px;
     }
+
     main {
         padding: 0px 80px;
     }
+
     .summary-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     h1{
         font-size: 5.6em;
         margin-top: 16px;
         margin-bottom: 96px;
     }
+
     footer{
         margin-left: 80px;
         margin-right: 80px;
     }
+
     #mouse-trail {
         position: fixed;
         top: 0;
@@ -290,15 +277,9 @@ footer div{
         transition: opacity 0.2s;
         box-shadow: 0 0 10px #FF10F0, 0 0 20px #FF10F0, 0 0 30px #FF5F1F, 0 0 40px #FF5F1F, 0 0 50px #cfff04, 0 0 60px #cfff04, 0 0 70px #cfff04;
     }    
-    /*.project-filter{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 0px;
+    body{
+        padding-bottom: 6em;
     }
-    .project-img{
-        width: 300px;
-    }*/
 }
 
 @media screen and (min-width: 1024px) {
@@ -312,10 +293,16 @@ footer div{
         margin-left: 128px;
         margin-right: 128px;
     }
+    body{
+        padding-bottom: 3em;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     h1{
         font-size: 6.4em;
+    }
+    body{
+        padding-bottom: 1em;
     }
 }
