@@ -163,4 +163,14 @@ document.addEventListener("DOMContentLoaded", function () {
     animate();
 });
 
+// Define an array of colors
+const colors = ['#80ffcc', '#FF10F0', '#cfff04', '#FF5F1F'];
+
+// Get all h2 elements with the class 'color-cycle'
+const headings = document.querySelectorAll('h2.colors');
+
+// Loop through each h2 element and set its color
+for (let i = 0; i < headings.length; i++) {
+    headings[i].style.color = colors[i % colors.length];
+}
 

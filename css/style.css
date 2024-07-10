@@ -1,13 +1,14 @@
 :root{
     /*colors*/
     --black: #1E1E1E;
-    --white: #FFFFFF;
+    --white: #F2F2F2;
     --grey: #EAEAEA;
     /*fonts*/
-    --body: 'Quicksand', sans-serif;
-    --h1: 'Quicksand', sans-serif;
-    --h2: 'Quicksand', sans-serif;
-    --h3: 'Quicksand', sans-serif;
+    --body: 'Manrope', sans-serif;
+    --h1: "Syne", sans-serif;
+    --h2: 'Manrope', sans-serif;
+    --h3: 'Manrope', sans-serif;
+    --special: 'Syne', sans-serif;
     /*weights*/
     --light: 400;
     --regular: 500;
@@ -15,21 +16,21 @@
 }
 
 body{
-    background-color: var(--white);
+    background-color: var(--black);
 }
 
 p{
     font-family: var(--body);
     font-weight: var(--light);
     font-size: 0.8em;
-    color: var(--black);
+    color: var(--white);
 }
 
 h1 {
     font-family: var(--h1);
     font-weight: var(--light);
     font-size: 3.6em;
-    color: var(--black);
+    color: var(--white);
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-top: 16px;
@@ -37,16 +38,18 @@ h1 {
 }
 
 #title {
-    color: var(--black);
+    color: var(--white);
 }
 
 h2{
     font-family: var(--h2);
     font-weight: var(--bold);
     font-size: 0.8em;
-    color: var(--black);
 }
 
+.colors{
+    color: var(--white);
+}
 /*h3{
     font-family: var(--h3);
     font-weight: var(--bold);
@@ -67,7 +70,7 @@ h2{
 .hamburger-menu {
     background: none;
     border: none;
-    color:var(--black);
+    color:var(--white);
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -78,7 +81,7 @@ h2{
 .hamburger-menu .bar {
     width: 24px;
     height: 2px;
-    background-color: var(--black);
+    background-color: var(--white);
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -86,7 +89,7 @@ h2{
 .hamburger-menu span {
     padding-top: 4px;
     font-size: 10px;
-    color:var(--black);
+    color:var(--white);
     font-family: var(--body);
     font-weight: var(--regular);
 }
@@ -120,11 +123,15 @@ h2{
     margin: 16px 0;
 }
 
+.menu-open a:hover {
+    color: #80ffcc;
+}
+
 .menu-open a {
     color: var(--white);
     text-decoration: none;
     font-family: var(--body);
-    font-size: 0.8em;
+    font-size: 2em;
 }
 
 .close {
@@ -156,7 +163,7 @@ main {
 .summary li{
     font-family: var(--body);
     font-size: 0.8em;
-    color: var(--black);
+    color: var(--white);
 }
 
 .summary {
@@ -217,12 +224,12 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-top: 0.5px solid var(--black);
+    border-top: 0.5px solid var(--white);
 }
 footer a{
     font-family: var(--body);
     font-size: 0.8em;
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 }
 footer div{
@@ -261,13 +268,13 @@ footer div{
     
     .mouse-trail-dot {
         position: absolute;
-        width: 40px;
-        height: 40px;
-        background-color: #DE3163;
+        width: 6px;
+        height: 6px;
+        background-color: 0 20px 30px #80ffcc;
         border-radius: 50%;
         opacity: 0;
         transition: opacity 0.2s;
-        box-shadow: 0 0 10px #DE3163, 0 0 20px #DE3163, 0 0 30px #FF5F1F, 0 0 40px #FF5F1F, 0 0 50px #cfff04, 0 0 60px #cfff04, 0 0 70px #cfff04;
+        box-shadow: 0 0 10px #FF10F0, 0 0 20px #FF10F0, 0 0 30px #FF5F1F, 0 0 40px #FF5F1F, 0 0 50px #cfff04, 0 0 60px #cfff04, 0 0 70px #cfff04;
     }    
     /*.project-filter{
         display: flex;
