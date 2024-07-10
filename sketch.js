@@ -3,8 +3,7 @@ let canvas;
 function setup() {
   canvas = createCanvas(windowWidth/2, windowHeight/2);
   canvas.parent('canvasContainer');
-  background(30,30,30);
-  canvas.style('border', '2px solid #ccc');
+  background(36,36,36);
   canvas.style('border-radius', '8px');
 }
 
