@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Doodle Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+    #canvasContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    #saveButton {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-row">
+                <div class="logo">
+                    <a href="index.html"><img src="img/mereaux_logo.svg" alt="Logo Mereaux, digital product designer"></a>
+                </div>
+                <button class="hamburger-menu" aria-label="Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <span>menu</span>
+                </button>
+            </div>
+            <div class="menu-open">
+                <div class="close">
+                    <button class="close-menu" aria-label="Close Menu">&times;</button>
+                    <p>close</p>
+                </div>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <div id="canvasContainer"></div>
+  <a id="saveButton"><h2 class="colors" style="text-align: center;">download and send the doodle</h2></a>
+  <footer>
+    <p>&copy; 2024 sarah lisa mero</p>
+    <div>
+        <a href="mailto: sarahlisamero@gmail.com">email</a>
+        <a href="https://www.linkedin.com/in/sarah-lisa-m-130556190/">linkedin</a>
+        <a href="https://www.pinterest.com/sarahlisamero/">pinterest</a>
+    </div>
+    <a href="doodle.html"><h2 class="colors">make a doodle while you wait for my response, have some fun</h2></a>
+  </footer>
+  <div id="mouse-trail"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
