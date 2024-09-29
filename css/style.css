@@ -6,12 +6,13 @@
     /*fonts*/
     --body: 'Manrope', sans-serif;
     --h1: "Syne", sans-serif;
-    --h2: 'Manrope', sans-serif;
+    --h2: 'Syne', sans-serif;
     --h3: 'Manrope', sans-serif;
     --special: 'Syne', sans-serif;
     /*weights*/
     --light: 400;
     --regular: 500;
+    --semibold: 600;
     --bold: 700;
 }
 
@@ -49,16 +50,22 @@ h1 {
     color: var(--white);
 }
 
-h2{
+/*h2{
     font-family: var(--h2);
     font-weight: var(--bold);
     font-size: 0.8em;
-}
+}*/
 
-.colors{
+/*.colors{
+    color: var(--white);
+}*/
+
+.intro{
+    font-family: var(--h2);
+    font-weight: var(--semibold);
+    font-size: 18px;
     color: var(--white);
 }
-
 .nav-row {
     display: flex;
     justify-content: space-between;
@@ -197,7 +204,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: space-between;*/
-    border-top: 0.5px solid var(--white);
+    /*border-top: 0.5px solid var(--white);*/
     position: absolute;
     bottom: 0;
     left: 0;
