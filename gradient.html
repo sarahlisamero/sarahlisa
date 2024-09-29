@@ -13,24 +13,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /*background-color: #333;*/
         }
 
         .container {
             position: relative;
             width: 300px;
             height: 300px;
-            perspective: 1000px; /* Add perspective for 3D effect */
         }
-
-        /*#logo-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-        }*/
         #logo-canvas {
     position: absolute;
     top: 0;
@@ -60,39 +49,17 @@
         transform: scale(1.2); /* Enlarged size */
     }
 }
-
-
-        .rotating-circle {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border: 5px solid transparent;
-            border-radius: 50%;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-            animation: rotate 5s linear infinite;
-        }
-
-        @keyframes rotate {
-            from {
-                transform: rotateX(0deg) rotateY(0deg);
-            }
-            to {
-                transform: rotateX(360deg) rotateY(360deg);
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <canvas id="logo-canvas"></canvas>
-        <!--<div class="rotating-circle"></div>-->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
     <script>
-        // Your JS code will go here
         var granimInstance = new Granim({
     element: '#logo-canvas',
-    direction: 'left-right', // Change direction if you want (diagonal, top-bottom, etc.)
+    direction: 'diagonal', // Change direction if you want (diagonal, top-bottom, etc.)
     isPausedWhenNotInView: true,
     states: {
         "default-state": {
