@@ -196,6 +196,51 @@ body::after {
     height: 50px;
 }
 
+.about{
+    display: flex;
+    justify-content: center;
+    background-color: #242424;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#logo-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* Smoother fading border effect using a mask */
+    mask: radial-gradient(circle, 
+                        rgba(0, 0, 0, 1) 50%,    /* Solid at the center */
+                        rgba(0, 0, 0, 0.7) 60%,  /* Start fading */
+                        rgba(0, 0, 0, 0.3) 70%,  /* More transparent */
+                        rgba(0, 0, 0, 0) 80%);   /* Fully transparent at the edges */
+    /* Webkit compatibility for the mask property */
+    -webkit-mask: radial-gradient(circle, 
+                        rgba(0, 0, 0, 1) 50%, 
+                        rgba(0, 0, 0, 0.7) 60%, 
+                        rgba(0, 0, 0, 0.3) 70%, 
+                        rgba(0, 0, 0, 0) 80%);
+                        animation: pulse 20s ease-in-out infinite; /* Infinite loop */
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(0.2); /* Normal size */
+    }
+    50% {
+        transform: scale(2); /* Enlarged size */
+    }
+}
+
 footer{
     margin-left: 24px;
     margin-right: 24px;

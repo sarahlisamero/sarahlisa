@@ -174,3 +174,21 @@ for (let i = 0; i < headings.length; i++) {
     headings[i].style.color = colors[i % colors.length];
 }*/
 
+var granimInstance = new Granim({
+    element: '#logo-canvas',
+    direction: 'diagonal', // Change direction if you want (diagonal, top-bottom, etc.)
+    isPausedWhenNotInView: true,
+    states: {
+        "default-state": {
+            gradients: [
+                ['#EB3349', '#F45C43'],
+                ['#FF8008', '#FFC837'],
+                ['#4CB8C4', '#3CD3AD'],
+                ['#24C6DC', '#514A9D'],
+                ['#FF512F', '#DD2476'],
+                ['#DA22FF', '#9733EE']
+            ],
+            transitionSpeed: 10000 // Speed of the transition between gradients
+        }
+    }
+});
