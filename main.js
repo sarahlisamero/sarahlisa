@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const menuOpen = document.querySelector('.menu-open');
     const closeMenu = document.querySelector('.close-menu');
+    const menuItems = document.querySelectorAll('.menu-open ul li a');
 
     menuOpen.style.display = "none";
     
@@ -12,6 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeMenu.addEventListener('click', () => {
         menuOpen.style.display = "none";
+    });
+
+    menuItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            menuOpen.style.display = "none";
+        });
     });
 });
 /*document.addEventListener('DOMContentLoaded', () => {
