@@ -200,8 +200,10 @@ body {
 #tagline{
     z-index: 5;
     position: absolute;
-    width: 300px;
+    /*width: 320px;*/
     text-align: center;
+    font-size: 1.1em;
+    font-family: var(--h2);
 }
 .container {
     position: relative;
@@ -272,6 +274,11 @@ body {
     display: block;
     max-width: 340px;
     font-weight: var(--bold);
+    transition: transform .2s;
+}
+
+#doodlelink:hover{
+    transform: scale(1.1);
 }
 
 .row{
