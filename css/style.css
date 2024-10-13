@@ -178,6 +178,7 @@ main, #tagline{
 /*trick*/
 body {
     position: relative;
+    padding-bottom: 0em;
 }
   
 /*body::after {
@@ -367,7 +368,7 @@ body {
         box-shadow: 0 0 10px #FF10F0, 0 0 20px #FF10F0, 0 0 30px #FF5F1F, 0 0 40px #FF5F1F, 0 0 50px #cfff04, 0 0 60px #cfff04, 0 0 70px #cfff04;
     }    
     body{
-        padding-bottom: 6em;
+        padding-bottom: 0em;
     }
     .toolcontainer{
         text-align: center;
@@ -392,7 +393,7 @@ body {
         margin-right: 128px;
     }
     body{
-        padding-bottom: 3em;
+        padding-bottom: 0em;
     }
     .toolcontainer{
         text-align: center;
@@ -413,6 +414,6 @@ body {
         font-size: 6.4em;
     }
     body{
-        padding-bottom: 1em;
+        padding-bottom: 0em;
     }
 }
