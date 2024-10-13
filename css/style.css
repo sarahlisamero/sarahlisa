@@ -344,11 +344,6 @@ body {
         margin-bottom: 96px;
     }
 
-    footer{
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-
     #mouse-trail {
         position: fixed;
         top: 0;
@@ -387,10 +382,6 @@ body {
     }
     main {
         padding: 0px 128px;
-    }
-    footer{
-        margin-left: 128px;
-        margin-right: 128px;
     }
     body{
         padding-bottom: 0em;
