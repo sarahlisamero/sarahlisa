@@ -64,7 +64,7 @@ h1 {
 }
 
 .logo img{
-    width: 160px;
+    width: 100px;
 }
 
 .hamburger-menu {
@@ -121,10 +121,6 @@ h1 {
 
 .menu-open li {
     margin: 16px 0;
-}
-
-.menu-open a:hover {
-    color: #80ffcc;
 }
 
 .menu-open a {
