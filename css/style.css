@@ -416,6 +416,8 @@ body {
     .ftr{
         padding-left: 128px;
         padding-right: 128px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
     .rights{
         font-size: 0.8em;
