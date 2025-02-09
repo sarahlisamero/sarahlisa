@@ -1,7 +1,7 @@
 let canvas;
 
 function setup() {
-  canvas = createCanvas(windowWidth/2, windowHeight/2);
+  canvas = createCanvas(windowWidth/1.5, windowHeight/1.5);
   canvas.parent('canvasContainer');
   background(36,36,36);
   canvas.style('border-radius', '8px');
