@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doodle Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+    #canvasContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    #saveButton {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-row">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.svg" alt="Logo Sarah-Lisa Mero, digital product designer"></a>
+                </div>
+                <button class="hamburger-menu" aria-label="Menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <span>menu</span>
+                </button>
+            </div>
+            <div class="menu-open">
+                <div class="close">
+                    <button class="close-menu" aria-label="Close Menu">&times;</button>
+                    <p>close</p>
+                </div>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="mailto:sarahlisamero@gmail.com">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--<h1 style="text-align: center; font-size: 0.5em; margin-bottom: 0px;">your doodle goes here</h1>-->
+  <div id="canvasContainer"></div>
+  <div id="saveButton">
+    <a>download your doodle</a>
+  </div>
+  <footer>
+    <section class="ftr">
+        <div  class="btm">
+        <div>
+            <a id="doodlelink" href="mailto:sarahlisamero@gmail.com">let's grab a coffee</a>
+            <a class="social" style="text-decoration: wavy underline" href="doodle.html">Waiting for my response? Send doodles.</a>
+        </div>
+        <div class="socials">
+            <a class="social" href="https://www.linkedin.com/in/sarah-lisa-m-130556190/">linkedin</a>
+            <a class="social" href="mailto:sarahlisamero@gmail.com">mail</a>
+            <a class="social" href="https://open.spotify.com/user/sarahlisamero?si=941f62c10f0b42ae">spotify</a>
+        </div>
+        </div>
+        <div class="rights">&copy; sarah-lisa mero. all rights reserved. 2024.</div>
+    </section>
+    </footer>
+  <div id="mouse-trail"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="sketch.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
