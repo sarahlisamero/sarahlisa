@@ -28,7 +28,7 @@ body{
     padding-bottom: 2.7em;
 }
 
-p{
+p, section p{
     font-family: var(--body);
     font-weight: var(--light);
     font-size: 0.8em;
@@ -152,7 +152,7 @@ h1 {
     font-size: 2em;
 }
 
-main, #tagline{
+main, #tagline, .workcontainer{
     padding: 0px 24px;
 }
 
@@ -182,14 +182,46 @@ body {
     display: block;
     height: 50px;
 }*/
-
+.line{
+    background-color: #3d3d3d;
+    height: 1px;
+    margin-bottom: 36px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+}
+.profile{
+    width: 100%;
+    position: relative;
+    bottom:-10px;
+    border-radius: 16px;
+}
+.glass {
+    background: rgba(36, 36, 36, 0.1); /* semi-transparant wit */
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(45, 45, 45, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* voor Safari ondersteuning */
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.1);
+    color: white; /* eventueel, als je lichte tekst wilt */
+    margin-bottom: 20px;
+} 
+.glass h2{
+    font-family: var(--h2);
+}
+span{
+    color:#cfff04;
+}
 .about{
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center;  
     justify-content: center;
     background-color: #242424;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     margin-bottom: 40px;
     overflow: hidden;
 }
@@ -350,7 +382,7 @@ body {
         padding: 36px 80px;
     }
 
-    main {
+    main, .workcontainer {
         padding: 0px 80px;
     }
 
@@ -392,6 +424,28 @@ body {
         padding-left: 80px;
         padding-right: 80px;
     }
+    .glass{
+        margin-bottom: 0px;
+        align-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    article{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        margin-bottom: 64px;
+    }
+    .profile{
+        position: relative;
+        top: 0px;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    .line{
+        margin-bottom: 64px;
+    }
     .ftr{
         padding-left: 80px;
         padding-right: 80px;
@@ -402,7 +456,7 @@ body {
     .nav-row {
         padding: 36px 128px;
     }
-    main {
+    main, .workcontainer {
         padding: 0px 128px;
     }
     body{
@@ -421,6 +475,17 @@ body {
     }
     .rights{
         font-size: 0.8em;
+    }
+    .workcontainer{
+        display: flex;
+        justify-content: center;
+    }
+    .glass{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    article{
+        max-width: 80%;
     }
 }
 

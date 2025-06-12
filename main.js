@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 });*/
 document.addEventListener('DOMContentLoaded', () => {
-    const text = "an antwerp based digital experience designer";
+    const text = "creating digital impact through design, strategy and human insight.";
     let index = 0;
-    let speed = 40; // Adjust typing speed (milliseconds)
+    let speed = 36; // Adjust typing speed (milliseconds)
     const titleElement = document.getElementById("title");
 
     // Initialize the titleElement with empty spaces to reserve space
