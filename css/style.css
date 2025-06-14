@@ -520,7 +520,7 @@ span{
         background-image: url("/img/testcollage.png");
         background-blend-mode:color-burn;
         background-position-x: center;
-        background-size: 610px;
+        background-size: 520px;
     }
     .summary-container{
         display: flex;
