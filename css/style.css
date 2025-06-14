@@ -190,7 +190,7 @@ body {
 article{
     display: flex;
     flex-direction: column;
-    margin-bottom: 36px;
+    /*margin-bottom: 36px;*/
 }
 .profile{
     width: 100%;
@@ -199,13 +199,13 @@ article{
     border-radius: 16px;
 }
 .glass {
-    background: rgba(36, 36, 36, 0.1); /* semi-transparant wit */
+    background: rgba(36, 36, 36, 0.9); /* semi-transparant wit */
     border-radius: 16px;
     padding: 20px;
     border: 1px solid rgba(45, 45, 45, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* voor Safari ondersteuning */
-    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.3);
     color: white; /* eventueel, als je lichte tekst wilt */
     margin-bottom: 20px;
 } 
@@ -378,6 +378,135 @@ span{
     margin-bottom: 24px;
     text-decoration: underline;
 }
+/*
+  .bento-grid {
+    display: grid;
+    gap: 16px;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas:
+      "a a b c"
+      "d e f f"
+  }
+  
+  .bento-block {
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    overflow: hidden;
+  }
+
+  .bento-block:nth-child(1) { grid-area: a; background: #242424; }
+  .bento-block:nth-child(2) { grid-area: b; background: #242424; }
+  .bento-block:nth-child(3) { grid-area: c; background: #242424; }
+  .bento-block:nth-child(4) { grid-area: d; background: #242424; }
+  .bento-block:nth-child(5) { grid-area: e; background: #242424; }
+  .bento-block:nth-child(6) { grid-area: f; background: #242424; }
+  .bento-block:nth-child(7) { grid-column: 1 / 2; grid-row: 2 / 3; background: #242424; }
+  .bento-block:nth-child(8) { grid-column: 2 / 3; grid-row: 2 / 3; background: #242424; }
+  
+  .bento-block.text {
+    font-size: 1.1rem;
+  }
+  
+  .bento-block.image-block {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bento-block.image-block img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .bento-block.image-block span {
+    font-size: 1rem;
+  }
+*/
+.bento-grid{
+    display:grid;
+    gap:16px;
+    /*max-width:1200px;*/
+    margin-left: 120px;
+    margin-right: 120px;  
+    /*  desktop / tablet  */
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(4,180px);
+    grid-template-areas:
+      "a a b c"   /* row‑1 : a spans 2  */
+      "d e f f"   /* row‑2 : f spans 2  */
+      "g g h h"   /* row‑3 : all 1‑cell */
+      "k l l m";  /* row‑4 : l spans 2  */
+  }
+  
+  /* flow extras neatly below the designed rows */
+  .bento-grid{grid-auto-flow:dense;grid-auto-rows:150px;}
+  
+  /* ─────────────────  BLOCK SHELL  ───────────────── */
+  .bento-block{
+    background:#242424;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-weight:bold;
+    transition:transform .2s ease;
+    overflow:hidden;
+  }
+  .bento-block:hover{transform:scale(1.02);}
+  
+  /* ─────────────────  AREA ASSIGNMENTS  ───────────────── */
+  .bento-block:nth-child(1)  {grid-area:a;}
+  .bento-block:nth-child(2)  {grid-area:b;}
+  .bento-block:nth-child(3)  {grid-area:c;}
+  .bento-block:nth-child(4)  {grid-area:d;}
+  .bento-block:nth-child(5)  {grid-area:e;}
+  .bento-block:nth-child(6)  {grid-area:f;}
+  .bento-block:nth-child(7)  {grid-area:g;}
+  .bento-block:nth-child(8)  {grid-area:h;}
+  .bento-block:nth-child(9)  {grid-area:i;}
+  .bento-block:nth-child(10) {grid-area:j;}
+  .bento-block:nth-child(11) {grid-area:k;}
+  .bento-block:nth-child(12) {grid-area:l;}
+  .bento-block:nth-child(13) {grid-area:m;}
+  
+  /* any block 14+ just auto‑flows into the next free cell */
+  
+  /* ─────────────────  CONTENT VARIANTS  ───────────────── */
+  .bento-block.text{
+    font-size:0.9rem;
+    text-align:left;
+    padding-left:55px;
+    padding-right:55px;
+  }
+  .bento-block p{
+    font-weight: 100;
+  }
+  .bento-block strong{
+    font-weight: 800;
+  }
+  .bento-block.image-block{
+    flex-direction:column;
+    gap:10px;
+  }
+  .bento-block.image-block img{
+    max-width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius:12px;
+  }
 
 @media screen and (min-width: 768px) {
     .nav-row {
@@ -387,7 +516,12 @@ span{
     main, .workcontainer {
         padding: 0px 80px;
     }
-
+    .workcontainer{
+        background-image: url("/img/testcollage.png");
+        background-blend-mode:color-burn;
+        background-position-x: center;
+        background-size: 610px;
+    }
     .summary-container{
         display: flex;
         flex-direction: row;
@@ -439,7 +573,7 @@ span{
         display: flex;
         flex-direction: row;
         align-items: stretch;
-        margin-bottom: 64px;
+        /*margin-bottom: 64px;*/
     }
     .profile{
         position: relative;
@@ -463,7 +597,7 @@ span{
     }
     .workcontainer{
         margin-top: 114px;
-        margin-bottom: 64px;
+        margin-bottom: 114px;
     }
 }
 

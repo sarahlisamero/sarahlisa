@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 });*/
 document.addEventListener('DOMContentLoaded', () => {
-    const text = "creating digital impact through design, strategy and human insight.";
+    const text = "bridging (digital) experience, behavior and strategy.";
     let index = 0;
     let speed = 36; // Adjust typing speed (milliseconds)
     const titleElement = document.getElementById("title");
